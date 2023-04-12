@@ -4,13 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+
+        .project {
+            flex: 1;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Projects</h1>
-    <h2>Telco Customer Churn</h2>
-    <p>A project that analyzes customer churn in a telecommunications company and predicts whether a customer will leave the company using machine learning algorithms. <a href="https://github.com/daltonzurita/Telco_Customer_Churn">View the repository</a>.</p>
+    <header>
+        <h1>My Projects</h1>
+    </header>
 
-    <h2>Image Classification: Sedans, SUVs, and Trucks</h2>
-    <p>A project focused on classifying images of vehicles into three categories: sedans, SUVs, and trucks using a Convolutional Neural Network (CNN). <a href="https://github.com/daltonzurita/Image_classification">View the repository</a>.</p>
+    <div class="container">
+        <div class="project">
+            <img src="https://via.placeholder.com/300x200" alt="Telco Customer Churn">
+            <h3>Telco Customer Churn</h3>
+            <p>A project that analyzes customer churn in a telecommunications company and predicts whether a customer will leave the company using machine learning algorithms. <a href="https://github.com/daltonzurita/Telco_Customer_Churn">View the repository</a>.</p>
+        </div>
+
+        <div class="project">
+            <img src="https://via.placeholder.com/300x200" alt="Image Classification: Sedans, SUVs, and Trucks">
+            <h3>Image Classification: Sedans, SUVs, and Trucks</h3>
+            <p>A project focused on classifying images of vehicles into three categories: sedans, SUVs, and trucks using a Convolutional Neural Network (CNN). <a href="https://github.com/daltonzurita/Image_classification">View the repository</a>.</p>
+        </div>
+    </div>
 </body>
 </html>
